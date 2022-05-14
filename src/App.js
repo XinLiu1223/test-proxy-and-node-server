@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    fetch('/search?q=proxy')
+    // fetch('https://www.google.com/search?q=proxy')
+    fetch('http://localhost:4000/external-api')
+    // fetch('http://localhost:4000/external')
       .then(resp => {
         console.log(resp);
         console.log('======success=======');
